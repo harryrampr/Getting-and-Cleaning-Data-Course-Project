@@ -22,7 +22,7 @@ ____
 
 **CodeBook.md -** File with detailed information about the steps to create the final data sets and a description of each variable.
 
-**UCI HAR Dataset -** Folder containing original train and test data set. This folder also contains a new folder with both original data sets merged into one data set named 'all'.
+**UCI HAR Dataset -** Folder containing original train and test data sets. This folder also contains a new folder with both original data sets merged into one data set named 'all'.
 
 **run_analysis.R -** Script file containing the R code to generate data sets and analysis described in CodeBook.md.
 
