@@ -1,4 +1,4 @@
-#General Analysis of the Human Activity Recognition (HAR) Using Smartphones Dataset Version 1.0
+# General Analysis of the Human Activity Recognition (HAR) Using Smartphones Dataset Version 1.0
 
 **By:** Harry Ramirez - Data Science Student
 
@@ -18,7 +18,7 @@ The following is a general description of the steps toward the analysis:
 
 ____
 
-##Files Included in Repo
+## Files Included in Repo
 
 **CodeBook.md -** File with detailed information about the steps to create the final data sets and a description of each variable.
 

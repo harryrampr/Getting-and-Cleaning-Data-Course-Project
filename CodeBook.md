@@ -1,11 +1,11 @@
-#Getting and Cleaning Data - Course Project CodeBook
+# Getting and Cleaning Data - Course Project CodeBook
 
 
-##Data Source
+## Data Source
 The original data for this project comes from [Human Activity Recognition Using Smartphones Dataset V1.0](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#) and was downloaded from [Original Data Files](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). Detailed information of the original data set can be found at [Original Data Description](http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.names)
 
 
-##Original Data Overview
+## Original Data Overview
 The experiments were carried out with a group of 30 volunteers. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, they captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments were video-recorded to label the data manually. The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
@@ -63,7 +63,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 - tBodyGyroJerkMean
 
 
-##Project Data
+## Project Data
 Only a subset of the mean() and std() from the original variables was needed to be considered in order to complete this project:
 
 - tBodyAcc-XYZ
@@ -89,7 +89,7 @@ Variables ending XYZ have 3 components, one for each axis (x,y and z), that make
 All other original variables were ignored for the purpose of this project. You can refer to code on script 'run_analysis.R' for details on how data subset was extracted.
 
 
-##Tidy Data Set Description
+## Tidy Data Set Description
 The tidy data set was constructed after manually downloading the UCI HAR DataSet. Linux OS commands were used to uncompress the files from the original zip format. Then the R script named 'run_analysis.R' was executed in order to take the data to a tidy format and also to generate the requested average computations. More details on the actual steps are detailed in the script code.
 
 A data frame containing the necessary variables for the analysis was stored in the folder named 'TidyData' on a file named 'HAR_Data.rds'. On the following table you can find the names and measurement units of all tidy data frame columns. You can also find a reference for each variable to the original HAR data set.
