@@ -146,28 +146,14 @@ if (!dir.exists(tidyDataFolder)) {
 saveRDS(harDf,paste0(tidyDataFolder,"/HAR_Data.rds"))
 
 # Generate variables' averages
-activityAverages <- harDf %>%
-    select(-subject) %>%
-    group_by(activity) %>%
-    summarise_all(mean)
-head(activityAverages)
-
-subjectAverages <- harDf %>%
-    select(-activity) %>%
-    group_by(subject) %>%
-    summarise_all(mean)
-head(subjectAverages)
-
-activitySubjectAverages <- harDf %>%
+analysisDf <- harDf %>%
     group_by(activity,subject) %>%
     summarise_all(mean)
-head(activitySubjectAverages)
+head(analysisDf)
 
 # Save variables' averages data set
-averagesFolder <- "./VariablesAverages"
-if (!dir.exists(averagesFolder)) {
-    dir.create(averagesFolder)
+analysisFolder <- "./AnalysisData"
+if (!dir.exists(analysisFolder)) {
+    dir.create(analysisFolder)
 }
-saveRDS(activityAverages,paste0(averagesFolder,"/Activity_Averages.rds"))
-saveRDS(subjectAverages,paste0(averagesFolder,"/Subject_Averages.rds"))
-saveRDS(activitySubjectAverages,paste0(averagesFolder,"/Activity_Subject_Averages.rds"))
+write.table(analysisDf,file = paste0(analysisFolder,"/Activity_Subject_Averages.rds"), row.name=FALSE)

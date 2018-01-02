@@ -28,7 +28,7 @@ ____
 
 **TidyData -** Folder containing the R data frame resulting from the cleaning of the original data set.
 
-**VariablesAverages -** Folder containing the R data frames resulting from the general analysis of the Tidy Data set. Details about this folder can be found at the CodeBook.md.
+**AnalysisData -** Folder containing the R data frame resulting from the general analysis of the Tidy Data set. Details about this folder can be found at the CodeBook.md.
 
 **generate_CodeBook_Data.R -** Script file containing R code to generate some of the data needed for the compilation of the CodeBook.
 

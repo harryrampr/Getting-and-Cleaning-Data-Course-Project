@@ -89,7 +89,7 @@ Variables ending XYZ have 3 components, one for each axis (x,y and z), that make
 All other original variables were ignored for the purpose of this project. You can refer to code on script 'run_analysis.R' for details on how data subset was extracted.
 
 
-##Tidy Data Description
+##Tidy Data Set Description
 The tidy data set was constructed after manually downloading the UCI HAR DataSet. Linux OS commands were used to uncompress the files from the original zip format. Then the R script named 'run_analysis.R' was executed in order to take the data to a tidy format and also to generate the requested average computations. More details on the actual steps are detailed in the script code.
 
 A data frame containing the necessary variables for the analysis was stored in the folder named 'TidyData' on a file named 'HAR_Data.rds'. On the following table you can find the names and measurement units of all tidy data frame columns. You can also find a reference for each variable to the original HAR data set.
@@ -167,10 +167,10 @@ Tidy Column Number | Tidy Variable Name | HAR Column Number | HAR Variable Name 
 68|fbodybodygyrojerkmagstd|543|fBodyBodyGyroJerkMag-std()|radians/second
 
 
-## Data Set of Variables' Averages by Groups
-A secondary data set was created by the code in 'run_analysis.R'. This data set contains averages for 66 of the 68 variables in the Tidy data set. Averages computations were grouped by 'activity', by 'subject' and by 'activity + subject'. The three resulting data frames were saved on folder 'VariableAverages' in three RDS format files named 'Activity_Averages.rds', 'Subject_Averages.rds' and 'Activity_Subject_Averages.rds' respectively.
+## Analysis Data Set Description
+A secondary data set was created by the code in 'run_analysis.R'. This data set contains averages for 66 of the 68 variables in the 'Tidy Data Set'. Averages computations were after grouping data frame by 'activity & subject'. The resulting data frame was saved on folder 'AnalysisData' in a file named 'Analysis_Data.txt'.
 
-You can refer to 'Tidy Data Description' for the names and units of each column of the averages data frames. You may also refer to the script 'run_analysis.R' for details on how variables were grouped and averages computed.
+You can refer to 'Tidy Data Description' for the description and units of each column of the 'Analysis_Data.txt' data set. You may also refer to the script 'run_analysis.R' for details on how variables were grouped and averages computed.
 
 
 
