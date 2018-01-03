@@ -156,4 +156,4 @@ analysisFolder <- "./AnalysisData"
 if (!dir.exists(analysisFolder)) {
     dir.create(analysisFolder)
 }
-write.table(analysisDf,file = paste0(analysisFolder,"/Activity_Subject_Averages.rds"), row.name=FALSE)
+write.table(analysisDf,file = paste0(analysisFolder,"/Analysis_Data.txt"), row.name=FALSE)
